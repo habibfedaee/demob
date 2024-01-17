@@ -1,0 +1,32 @@
+{
+  "name": "demob",
+  "version": "1.0.0",
+  "description": "demoblaze test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome",
+    "demoBlazeTest": "npm run test --spec \"cypress/e2e/feature_files/*\""
+  },
+  "keywords": [],
+  "author": "habibi",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.6.3",
+    "mocha": "^10.2.0",
+    "multiple-cucumber-html-reporter": "^3.6.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/**/*.js",
+    "cucumberJSON": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

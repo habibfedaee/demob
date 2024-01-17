@@ -1,0 +1,7 @@
+Project works based on the badebal cypress cucumber preprocessor
+configurations based on the udemy cypress cucumber training
+
+ data driven testing:
+ use the following instructions from ai chat to implement ddt
+
+ https://chat.openai.com/share/77097cb4-da2c-48d7-baf8-5050548a8d5f
